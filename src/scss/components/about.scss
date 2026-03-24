@@ -1,10 +1,12 @@
 .about-section {
+  background: #6989af;
+
   @include media(desktop) {
   }
 }
 
 .about-bg-wrapper {
-  padding-top: 40px;
+  padding-top: 48px;
   padding-bottom: 56px;
 
   @include media(desktop) {
@@ -21,43 +23,48 @@
   }
 }
 
-.about-title {
+.about-subtitle {
+  color: #fafafa;
+
   @include media(desktop) {
   }
 }
 
 .about-content-wrapper {
-  background: #6e5d4c;
-  border-radius: 4px;
-  padding: 40px 24px;
+  background: linear-gradient(270deg, #b1c6db 0%, #bbcfdf 100%);
+  border: 2px solid rgba(34, 59, 90, 0.6);
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    gap: 48px;
+    flex-direction: row-reverse;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .about-text {
-  font-family: 'Oxanium', sans-serif;
-  font-weight: 400;
+  padding: 32px 34px;
+  font-family: 'Mohave', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: center;
-  color: #d9e9eb;
+  color: #223b5a;
 
   @include media(desktop) {
+    padding: 48px;
     font-size: 16px;
-    max-width: 343px;
+    text-align: left;
+    max-width: 471px;
   }
 }
 
 .about-img {
   @include media(desktop) {
-    min-width: 260px;
+    min-width: 446px;
   }
 }

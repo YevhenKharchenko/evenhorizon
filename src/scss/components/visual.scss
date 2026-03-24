@@ -1,44 +1,54 @@
-.contact-section {
+.visual-section {
   background: #6989af;
+
+  @include media(desktop) {
+  }
 }
 
-.contact-bg-wrapper {
+.visual-bg-wrapper {
   padding-top: 56px;
   padding-bottom: 56px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
     padding-bottom: 64px;
+    max-width: 1440px;
   }
 }
 
-.contact-container {
-}
+.visual-container {
+  padding: 0;
 
-.contact-title-wrapper {
   @include media(desktop) {
   }
 }
 
-.contact-subtitle {
+.visual-subtitle {
   color: #fafafa;
 
   @include media(desktop) {
   }
 }
 
-.contact-content-wrapper {
+.visual-text-wrapper {
+  padding: 0 16px;
+  margin-bottom: 20px;
+
   @include media(desktop) {
+    padding: 0 120px;
+    margin-bottom: 24px;
   }
 }
 
-.contact-text {
+.visual-text {
   font-family: 'Mohave', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   text-align: center;
   color: #fafafa;
-  margin-bottom: 24px;
 
   @include media(desktop) {
     font-size: 16px;
@@ -48,24 +58,9 @@
   }
 }
 
-.contact-email-link {
-  font-family: 'Mohave', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-
-  @include media(desktop) {
-    font-size: 16px;
-  }
-}
-
-.email-icon {
-  min-width: 24px;
+.visual-img {
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
   }
